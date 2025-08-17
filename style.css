@@ -55,7 +55,7 @@ header .NavList li {
 
 #Top {
   background: url("main.jpg") no-repeat center top;
-  background-size: contain;
+  background-size: auto;
   background-attachment: scroll;
 }
 
