@@ -59,7 +59,7 @@ header .NavList li {
    color: #767676;
    font-family: "Times New Roman", serif;
    padding: 100px 30px;
-   background: url("main.jpg") no-repeat center center;
+   background: url("main.jpg") no-repeat center top;
    background-size: cover;
    background-attachment: scroll;
 }
@@ -69,8 +69,7 @@ header .NavList li {
    font-family: "Times New Roman", serif;
    color: #949494;
    background-color: #E4F8FA;
-   margin-top: 100px;
-   padding: 100px 0;
+   padding: 300px 0;
    text-align: center;
 }
 
