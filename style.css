@@ -53,16 +53,13 @@ header .NavList li {
    padding: 0 10px;
 }
 
-#Top {
-  
-}
 
 #Logo {
    font-size: 300%;
    color: #767676;
    font-family: "Times New Roman", serif;
    padding: 100px 30px;
-   background: url("main.jpg") no-repeat center top;
+   background: url("main.jpg") no-repeat center center;
    background-size: cover;
    background-attachment: scroll;
 }
@@ -71,7 +68,7 @@ header .NavList li {
    font-size: 150%;
    font-family: "Times New Roman", serif;
    color: #949494;
-   background-color: rgba(255, 255, 255, 0.5);
+   background-color: #E4F8FA;
    margin-top: 800px;
    padding: 340px 0;
    text-align: center;
