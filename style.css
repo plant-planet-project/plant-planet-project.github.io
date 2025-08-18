@@ -54,25 +54,26 @@ header .NavList li {
 }
 
 
+#Main {
+   position: relative;
+}
+
+#Main img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
 #Logo {
+   position: absolute; 
+   top: 100px; 
+   left: 30px; 
    font-size: 300%;
    color: #767676;
    font-family: "Times New Roman", serif;
-   position:abusolute;
-   top:100px;
-   left:30px;
+   z-index: 5;         
 }
 
-#Top{
-   height:100%;
-   justify-content:center;
-   position:relative;
-}
-
-#Main img{
-   width:100%;
-   height:auto;
-}
 
 #Story {
    font-size: 150%;
