@@ -59,11 +59,10 @@ header .NavList li {
    color: #767676;
    font-family: "Times New Roman", serif;
    padding: 100px 30px;
-   background: url("main.jpg") no-repeat;
+   background: url("main.jpg") no-repeat center bottom;
    background-size: cover;
    background-attachment: scroll;
-   width:100vw;
-   height:375px;
+   width:100%;
 }
 
 #Story {
