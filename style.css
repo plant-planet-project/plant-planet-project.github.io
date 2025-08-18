@@ -66,6 +66,7 @@ header .NavList li {
 #Top{
    height:100%;
    justify-content:center;
+   position:relative;
 }
 
 #Main img{
