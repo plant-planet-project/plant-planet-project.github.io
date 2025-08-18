@@ -58,8 +58,9 @@ header .NavList li {
    font-size: 300%;
    color: #767676;
    font-family: "Times New Roman", serif;
-   padding: 100px 30px;
    position:abusolute;
+   top:100px;
+   left:30px;
 }
 
 #Main{
