@@ -62,7 +62,7 @@ header .NavList li {
    background: url("main.jpg") no-repeat center bottom;
    background-size: cover;
    background-attachment: scroll;
-   height:300vh;
+   height:375px;
 }
 
 #Story {
