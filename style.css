@@ -41,7 +41,7 @@ header .NavList li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/PPPweb.png") center/cover no-repeat;
+  background: url("PPPweb.png") center/cover no-repeat;
   z-index: -1;
   /* コンテンツの裏側に置く */
 }
@@ -128,7 +128,7 @@ header .NavList li {
   height: 3000px;
   padding: 100px 20px;
   text-align: center;
-  background: url("../images/member.png") bottom/cover no-repeat;
+  background: url("member.png") bottom/cover no-repeat;
   z-index: -1;
 
 }
