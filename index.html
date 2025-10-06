@@ -4,17 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Plant Planet Project </title>
-  <link href="sanitize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <title>Plant Planet Project</title>
+  <link href="css/sanitize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
   <header>
-
-    <div class="Logo">
-    </div>
-
+    <div class="Logo"></div>
     <nav>
       <ul class="NavList">
         <li><a href="#Top">Top</a></li>
@@ -22,62 +20,56 @@
         <li><a href="#Member">Member</a></li>
       </ul>
     </nav>
-
   </header>
-  
-  <div id="Main">
-  <img src="main.jpg">
-    <div id="Logo">
-      Plant<br>Planet<br>Project
+
+  <!-- メインビジュアル + ストーリー -->
+  <div class="bg-fixed"></div>
+  <section id="Top" class="bg-section">
+    <div class="overlay">
+      <div id="Logo">
+        <img src="images/PPPlogo.png" alt="ロゴ">
+      </div>
+      <div class="story">
+        <p>私たちのふるさとは、<br>とおい未来のとおくの星。</p>
+        <p>サイバー化が進んだその星では、<br>植物はぜんぶ図鑑のなか。</p>
+        <p>「ああ、あの草は、あの花は、<br>どんな香りがするんだろう！」</p>
+        <p>緑を夢みた私たちは、<br>5人で宇宙へ飛び出した。</p>
+        <p>この世界のどこかにある、<br>Plant Planetに降り立つために…</p>
+        <p>探検しよう、研究しよう。</p>
+        <p>緑が蘇ったふるさとを、<br>思い描きながら。</p>
+        <p>「Plant Planet Project」開始！</p>
+      </div>
     </div>
-  </div>
-  
-
-    <div id="Story">
-      ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー<br>ストーリー
-    </div>
-
-
-  <section id="Map">
-    <img src="map.jpg">
-    <div id="sougen">
-      <input type="button" onclick="location.href='sougen.html'" value="草原">
-    </div>
-
   </section>
 
+  <!-- 雲アニメーション -->
+  <section class="cloud-section">
+    <img src="images/cloud.png" alt="雲" class="cloud">
+  </section>
+
+  <!-- マップ -->
+  <section id="Map">
+    <img src="images/map.png" alt="マップ">
+    <!--<div id="sougen">
+      <input type="button" onclick="location.href='sougen.html'" value="草原">
+    </div>-->
+  </section>
+
+  <!-- メンバー紹介 -->
   <section id="Member">
-
-    <h2>Member</h2>
-
-    <div class="Profile">
-      <img src="profile.jpg" alt="プロフィール画像">
-    </div>
-
-    <div class="Profile">
-      <img src="profile.jpg" alt="プロフィール画像">
-    </div>
-
-    <div class="Profile">
-      <img src="profile.jpg" alt="プロフィール画像">
-    </div>
-
-    <div class="Profile">
-      <img src="profile.jpg" alt="プロフィール画像">
-    </div>
-
-    <div class="Profile">
-      <img src="profile.jpg" alt="プロフィール画像">
-      <!--<p>まりな</p>
-      <a href="URL" target="_blank"><img src="images/instagram.jpg" alt="instagram"></a>
-      <a href="URL" target="_blank"><img src="images/mailicon.jpg" alt="メールアイコン"></a>-->
-    </div>
-
+    <h2>member</h2>
+    <div class="Profile"><img src="images/profile_nana.png" alt="プロフィール画像"></div>
+    <div class="Profile"><img src="images/profile_morishi.png" alt="プロフィール画像"></div>
+    <div class="Profile"><img src="images/profile_marina.png" alt="プロフィール画像"></div>
+    <div class="Profile"><img src="images/profile.png" alt="プロフィール画像"></div>
+    <div class="Profile"><img src="images/profile.png" alt="プロフィール画像"></div>
   </section>
 
   <footer>
     <div class="credit">©Plant Planet Project</div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
