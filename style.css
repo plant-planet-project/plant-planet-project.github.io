@@ -123,7 +123,7 @@ header .NavList li {
 
 /* メンバー */
 #Member {
-  height: 3000px;
+  height: 2000px;
   padding: 100px 20px;
   text-align: center;
   background: url("member.png") bottom/cover no-repeat;
