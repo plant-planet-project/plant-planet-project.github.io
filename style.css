@@ -101,7 +101,7 @@ span {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  bottom: 25%;
+  bottom: 20%;
 }
 
 #Roket img {
@@ -186,7 +186,6 @@ span {
   text-align: center;
 }
 
-/* スマホ対応 */
 @media (max-width: 768px) {
   .Hamburger {
     display: block;
