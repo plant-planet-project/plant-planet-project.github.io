@@ -12,12 +12,16 @@
 <body>
 
   <header>
-    <div class="Logo"></div>
-    <nav>
+    <button class="Hamburger" id="hamburger">
+      <img src="menu.png" alt="メニューアイコン">
+    </button>
+
+    <nav id="navMenu">
       <ul class="NavList">
         <li><a href="#Top">Top</a></li>
         <li><a href="#Map">Map</a></li>
         <li><a href="#Member">Member</a></li>
+        <li><a href="#Form"><span>アンケートはこちらから</span></a></li>
       </ul>
     </nav>
   </header>
@@ -25,39 +29,39 @@
   <!-- メインビジュアル + ストーリー -->
   <div class="bg-fixed"></div>
   <section id="Top" class="bg-section">
-    <div class="overlay">
-      <div id="Logo">
-        <img src="PPPlogo.png" alt="ロゴ">
-      </div>
-      <div class="story">
-        <p>私たちのふるさとは、<br>とおい未来のとおくの星。</p>
-        <p>サイバー化が進んだその星では、<br>植物はぜんぶ図鑑のなか。</p>
-        <p>「ああ、あの草は、あの花は、<br>どんな香りがするんだろう！」</p>
-        <p>緑を夢みた私たちは、<br>5人で宇宙へ飛び出した。</p>
-        <p>この世界のどこかにある、<br>Plant Planetに降り立つために…</p>
-        <p>探検しよう、研究しよう。</p>
-        <p>緑が蘇ったふるさとを、<br>思い描きながら。</p>
-        <p>「Plant Planet Project」開始！</p>
-      </div>
+    <div id="Logo">
+      <img src="PPPlogo.png" alt="ロゴ">
+    </div>
+    <div id="Roket">
+      <img src="roket.png" alt="ロケット">
+    </div>
+    <div class="story">
+      <p>私たちのふるさとは、<br>とおい未来のとおくの星。</p>
+      <p>サイバー化が進んだその星では、<br>植物はぜんぶ図鑑のなか。</p>
+      <p>「ああ、あの草は、あの花は、<br>どんな香りがするんだろう！」</p>
+      <p>緑を夢みた私たちは、<br>5人で宇宙へ飛び出した。</p>
+      <p>この世界のどこかにある、<br>Plant Planetに降り立つために……。</p>
+      <p>探検しよう、研究しよう。</p>
+      <p>緑が蘇ったふるさとを、<br>思い描きながら。</p>
+      <p>「Plant Planet Project」開始！</p>
     </div>
   </section>
 
   <!-- 雲アニメーション -->
   <section class="cloud-section">
-    <img src="cloud.png" alt="雲" class="cloud">
+    <img src="cloud1.png" alt="雲" class="cloud">
+    <img src="cloud2.png" alt="雲" class="cloud">
+    <img src="cloud3.png" alt="雲" class="cloud">
   </section>
 
   <!-- マップ -->
   <section id="Map">
-    <img src="map.png" alt="マップ">
-    <!--<div id="sougen">
-      <input type="button" onclick="location.href='sougen.html'" value="草原">
-    </div>-->
+    <img src="map.jpg" alt="マップ">
   </section>
 
   <!-- メンバー紹介 -->
   <section id="Member">
-    <h2>member</h2>
+    <p>研究隊員</p>
     <div class="Profile"><img src="profile_iwana.png" alt="プロフィール画像"></div>
     <div class="Profile"><img src="profile_ebi.png" alt="プロフィール画像"></div>
     <div class="Profile"><img src="profile_yagi.png" alt="プロフィール画像"></div>
@@ -65,8 +69,13 @@
     <div class="Profile"><img src="profile_rasen.png" alt="プロフィール画像"></div>
   </section>
 
+  <!-- アンケート -->
+  <section id="Form">
+    <p>アンケート</p>
+  </section>
+
+
   <footer>
-    <div class="credit">©Plant Planet Project</div>
   </footer>
 
   <script src="main.js"></script>
