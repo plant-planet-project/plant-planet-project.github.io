@@ -1,38 +1,41 @@
-// ---- 雲アニメーション ----
-const cloud = document.querySelector('.cloud');
-const cloudSection = document.querySelector('.cloud-section');
-const lines = document.querySelectorAll(".story p");
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+const rocket = document.getElementById('Roket');
 
-window.addEventListener('scroll', () => {
-  const rect = cloudSection.getBoundingClientRect();
-
-  // 全文が表示されているかチェック
-  const allShown = Array.from(lines).every(line => line.classList.contains("show"));
-
-  if (allShown && rect.top < window.innerHeight && rect.bottom > 0) {
-    let progress = 1 - rect.bottom / window.innerHeight;
-    cloud.style.transform = `translateX(${progress * -1000}px)`;
-    cloudSection.style.opacity = 1;
-  } else {
-    cloudSection.style.opacity = 0;
-  }
+// ---- ハンバーガーメニュー操作 ----
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
 });
 
-// ---- ストーリーテキスト ----
+// ---- ストーリーアニメーション & ロケット移動 ----
+const lines = document.querySelectorAll(".story p");
+
 document.addEventListener("DOMContentLoaded", () => {
   const windowHeight = window.innerHeight;
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
 
+    // テキストの表示制御
     lines.forEach((line, index) => {
       const triggerPoint = index * (windowHeight * 0.5);
-
       if (scrollY > triggerPoint) {
         line.classList.add("show");
       } else {
         line.classList.remove("show");
       }
     });
+
+    // ---- ロケット移動 ----
+    const moveX = scrollY * -0.5;
+    const moveY = scrollY * 0.3;
+    rocket.style.transform = `translate(calc(-50% + ${moveX}px), ${moveY}px)`;
+
+    if (moveX < -300 && moveY > 200) {
+      hamburger.classList.add('show');
+    } else {
+      hamburger.classList.remove('show');
+    }
   });
 });
