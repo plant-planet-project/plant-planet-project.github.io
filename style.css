@@ -1,65 +1,89 @@
 body {
   background-color: #E4F8FA;
-  font-size: 18px;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', sans-serif;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
 }
 
 header {
-  background: transparent;
-  z-index: 10;
+  width: 300px;
   position: fixed;
-  width: 100%;
-  padding: 10px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  bottom: 500px;
+  right: 150px;
+  z-index: 10;
+  font-size: 40px;
+
 }
 
-header a {
-  color: #ffffff;
-  font-family: "Times New Roman", Times, serif;
-}
+.NavList {
+    width: 300px;
 
-header .NavList {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 26px;
 }
 
-header .NavList li {
-  padding: 0 10px;
+.NavList a {
+    width: 300px;
+
+  text-decoration: none;
+  color: #ffffffba;
+}
+
+.NavList a span {
+  font-size: 20px;
+
+}
+
+
+.Hamburger {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.Hamburger img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 /* メインビジュアル */
-/* 背景専用の固定レイヤー */
 .bg-fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("PPPweb.png") center/cover no-repeat;
+  background: url("webMain.jpg") center/cover no-repeat;
   z-index: -1;
-  /* コンテンツの裏側に置く */
 }
 
-.overlay {
+.bg-section {
   position: relative;
-  /* ← stickyをやめて通常スクロール */
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  /* ロゴやテキストが背景の中央に重なりやすく */
   height: 4000px;
 
 }
 
 #Logo img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#Roket img {
   width: 300px;
   margin-bottom: 10px;
 }
@@ -114,29 +138,19 @@ header .NavList li {
   width: 100%;
 }
 
-#sougen {
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  font-size: 18px;
-}
-
 /* メンバー */
 #Member {
   height: 2500px;
   padding: 100px 20px;
   text-align: center;
-  background: url("member.png") bottom/cover no-repeat;
+  background: url("member.jpg") bottom/cover no-repeat;
   z-index: -1;
 
 }
 
-#Member h2 {
-  font-size: 200%;
+#Member p {
   color: #ffffff;
-  margin-bottom: 60px;
-  font-family: "Times New Roman", Times, serif;
-
+  margin: 150px 0px;
 }
 
 .Profile img {
@@ -144,17 +158,17 @@ header .NavList li {
   margin-bottom: 70px;
 }
 
-/* フッター */
-footer {
-  background: #0d0631;
-  color: #a3a3a3;
-  padding: 40px;
+/* アンケート */
+#Form {
+  background-color: #a7dbe0;
+  color: #ffffff;
+  height: 1000px;
+  padding: 100px 20px;
   text-align: center;
 }
 
-footer .credit {
-  font-size: 14px;
-}
+
+
 
 /* スマホ対応 */
 @media screen and (max-width: 640px) {
@@ -164,5 +178,34 @@ footer .credit {
 
   .Profile img {
     width: 90%;
+  }
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
+  .Hamburger {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 150px;
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .NavList {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .NavList li {
+    text-align: right;
   }
 }
