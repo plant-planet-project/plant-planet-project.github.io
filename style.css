@@ -100,11 +100,11 @@ span {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  top: 40%;
+  top: 42%;
 }
 
 #Roket img {
-  width: 250px;
+  width: 240px;
   height: auto;
 }
 
